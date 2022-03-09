@@ -15,7 +15,255 @@ body {
 	background-color: var(--blue-0);
 }
 
+/* NAVBAR STYLES */
+
 .navbar {
+	background-color: var(--blue-2);
+	max-width: 320px;
+}
+.navbar__brand-name {
+	max-width: 250px;
+	margin: var(--size-2) auto;
+}
+
+/* Main Styles */
+
+.main {
+	max-width: 300px;
+	margin: 0 auto;
+	background-color: var(--red-3);
+}
+
+/* Top Section style */
+
+.topsection {
 	display: flex;
-	background-color: var(--red-1);
+	flex-direction: column;
+}
+
+/* Intro Styles */
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--gray-2);
+	margin: var(--size-5) auto;
+	box-shadow: var(--shadow-3);
+	border-radius: var(--radius-3);
+	padding: var(--size-2);
+}
+
+.intro__images {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: var(--size-2) auto;
+}
+
+.intro__images-item {
+	width: 100px;
+}
+
+.intro__text {
+	font-size: var(--font-size-0);
+	text-align: center;
+	padding: var(--size-2);
+	line-height: var(--size-4);
+}
+
+.intro__image {
+	width: 100%;
+	padding: var(--size-3);
+}
+
+/* Quick One Styles */
+
+.quickone {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--gray-2);
+	margin: var(--size-5) auto;
+	box-shadow: var(--shadow-3);
+	border-radius: var(--radius-3);
+	padding: var(--size-2);
+}
+.quickone__header-image {
+	width: 100%;
+}
+
+.quickone__text {
+	font-size: var(--font-size-0);
+	text-align: center;
+	padding: var(--size-2);
+	line-height: var(--size-4);
+}
+
+/* About Styles */
+
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--gray-2);
+	margin: var(--size-5) auto;
+	box-shadow: var(--shadow-3);
+	border-radius: var(--radius-3);
+	padding: var(--size-2);
+}
+.about__image {
+	width: 100%;
+}
+.about__sub-header {
+	font-size: var(--font-size-0);
+}
+
+.about__text {
+	font-size: var(--font-size-0);
+	text-align: center;
+	padding: var(--size-2);
+	line-height: var(--size-4);
+}
+
+/* Newspapers section Styles */
+
+.newspapers {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--gray-2);
+	margin: var(--size-5) auto;
+	box-shadow: var(--shadow-3);
+	border-radius: var(--radius-3);
+	padding: var(--size-2);
+}
+.newspapers__header {
+	width: 100%;
+}
+.newspapers__image {
+	width: 100%;
+	margin: var(--size-5) auto;
+}
+.newspapers__text {
+	font-size: var(--font-size-0);
+	text-align: center;
+	padding: var(--size-2);
+	line-height: var(--size-4);
+}
+
+/* Magazine Section Style */
+
+.magazines {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: var(--gray-2);
+	margin: var(--size-5) auto;
+	box-shadow: var(--shadow-3);
+	border-radius: var(--radius-3);
+	padding: var(--size-2);
+	align-content: center;
+}
+.magazine__content-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.magazines__header {
+	width: 80%;
+}
+.magazines__text {
+	font-size: var(--font-size-1);
+	text-align: center;
+	padding: var(--size-2);
+	line-height: var(--size-3);
+}
+
+.magazines__images {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.magazines__images-item {
+	width: 100px;
+	padding: var(--size-1);
+}
+
+/* Sketches Section Styles */
+
+.sketch {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--gray-2);
+	margin: var(--size-5) auto;
+	box-shadow: var(--shadow-3);
+	border-radius: var(--radius-3);
+	padding: var(--size-2);
+}
+.sketch__image {
+	width: 100%;
+	margin: var(--size-5) auto;
+}
+.sketch__header {
+	width: 100%;
+}
+.sketch__text {
+	font-size: var(--font-size-1);
+	text-align: center;
+	padding: var(--size-2);
+	line-height: var(--size-3);
+}
+/* Illustrations Section Styles */
+
+.illustrations {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--gray-2);
+	margin: var(--size-5) auto;
+	box-shadow: var(--shadow-3);
+	border-radius: var(--radius-3);
+	padding: var(--size-2);
+}
+
+.illustrations__header {
+	width: 100%;
+}
+.illustrations__image {
+	width: 100%;
+	margin: var(--size-5) auto;
+}
+.illustrations__text {
+	font-size: var(--font-size-1);
+	text-align: center;
+	padding: var(--size-2);
+	line-height: var(--size-3);
+}
+
+/* Strips Section Styles */
+
+.strips {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--gray-2);
+	margin: var(--size-5) auto;
+	box-shadow: var(--shadow-3);
+	border-radius: var(--radius-3);
+	padding: var(--size-2);
+}
+.strips__image {
+	width: 100%;
+}
+.strips__header {
+	width: 100%;
+}
+.strips__text {
+	font-size: var(--font-size-1);
+	text-align: center;
+	padding: var(--size-2);
+	line-height: var(--size-3);
 }
