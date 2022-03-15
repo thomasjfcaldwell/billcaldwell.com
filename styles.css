@@ -15,38 +15,116 @@ body {
 	font-size: var(--font-size-2);
 	margin: 0;
 	padding: 0;
-	background-color: var(--color-primary);
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
 }
 
 header {
-	background-color: var(--blue-0);
+	border-bottom: 1px blue solid;
 }
 /* NAVBAR STYLES */
 
+h1 {
+	font-size: 2.5rem;
+}
+h1.active{
+	background-color: azure;
+}
+
+
 .navbar {
-	display: grid;
-	grid-template-columns: minmax(200px, 50%) 1fr;
-	margin: 0 auto;
 	display: flex;
-	justify-content: space-evenly;
-	max-width: 1440px;
-	height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
 }
 .navbar__brand-name {
 	margin: var(--size-2);
-	width: 25rem;
+	width: 15rem;
+}
+
+.navbar__list{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__list-item{
+	 margin-left: 2rem;
+}
+.navbar__list-item-link{
+	font-size: 1.2rem;
+    font-weight: 400;
+	 color: #475569;
+}
+
+.navbar__list-item-link:hover{
+	color: green;
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+@media only screen and (max-width: 768px) {
+.navbar__list{
+	position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+}
+.navbar__list.active{
+	left:0;
+}
+.navbar__list-item{
+	 margin: 2.5rem 0;
+}
+.hamburger {
+        display: block;
+        cursor: pointer;
+    }
+	.hamburger.active .bar:nth-child(2) {
+        opacity: 100;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
 }
 
 /* Main Styles */
 
-.main {
+/* .main {
 	margin: 0 auto;
 	padding-block: 1rem;
 	max-width: 1440px;
 }
 
 /* Header section styles */
-.headersection {
+/* .headersection {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	height: 40vh;
@@ -382,4 +460,4 @@ header {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-}
+}  */
