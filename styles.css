@@ -158,6 +158,10 @@ header {
 	color: var(--color-text);
 	letter-spacing: 0.2rem;
 }
+.headersection__text {
+	text-align: center;
+	font-size: var(--size-4);
+}
 
 @media only screen and (max-width: 768px) {
 	.headersection {
@@ -175,9 +179,105 @@ header {
 		margin: 0 auto;
 	}
 }
+@media only screen and (min-width: 1440px) {
+	.headersection {
+		height: 100vh;
+	}
+}
 
-/* Top Section style */
+/* About Section style */
+.about {
+	display: flex;
+	justify-content: space-around;
+	overflow: hidden;
+	-webkit-display: box;
+	-moz-display: box;
+	-ms-display: flexbox;
+	-webkit-display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+}
 
+.about__card {
+	display: flex;
+	padding: 1rem;
+	margin-bottom: 2rem;
+	width: 30%;
+}
+.about__card-content {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(231, 245, 255);
+	width: 100%;
+	border-radius: 6px;
+	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+	overflow: hidden;
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
+}
+.about__card-content:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+}
+.about__card-image {
+	height: 400px;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 6px 6px 0px 0px;
+	opacity: 0.91;
+}
+.about__card-header {
+	width: 50%;
+	margin: 2rem 0;
+}
+/* Quick one style */
+
+.quickone__card {
+	display: flex;
+	padding: 1rem;
+	margin-bottom: 2rem;
+	width: 60%;
+}
+.quickone__card-content {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(231, 245, 255);
+	width: 100%;
+	border-radius: 6px;
+	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+	overflow: hidden;
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
+}
+.quickone__card-video {
+	height: 600px;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.quickone__card-info {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	padding: 1rem;
+	line-height: 1.5em;
+}
+.quickone__card-header {
+	width: 25%;
+	margin: 2rem 0;
+}
+@media only screen and (min-width: 1440px) {
+	.about {
+		height: 100vh;
+	}
+}
+
+/* Services Style */
 .services {
 	display: flex;
 	-webkit-display: box;
@@ -209,7 +309,7 @@ header {
 .card-content {
 	display: flex;
 	flex-direction: column;
-	background-color: #fff;
+	background-color: rgb(231, 245, 255);
 	width: 100%;
 	border-radius: 6px;
 	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
@@ -230,7 +330,7 @@ header {
 	line-height: 1.5em;
 }
 .card-image {
-	height: 200px;
+	height: 300px;
 	overflow: hidden;
 	background-size: cover;
 	background-position: center;
@@ -254,6 +354,7 @@ header {
 	width: 50%;
 }
 .contactform__form-name-label {
+	font-size: var(--size-2);
 }
 
 /* footer section styles */
