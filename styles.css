@@ -58,6 +58,9 @@ header {
 .navbar__list-item {
 	margin-left: 2rem;
 }
+.navbar__list-item-image {
+	height: 2rem;
+}
 .navbar__list-item-link {
 	font-size: 1.2rem;
 	font-weight: 400;
@@ -98,7 +101,7 @@ header {
 		left: 0;
 	}
 	.navbar__list-item {
-		margin: 2.5rem 0;
+		margin: 0.5rem 0;
 	}
 	.hamburger {
 		display: block;
