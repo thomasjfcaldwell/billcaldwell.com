@@ -279,7 +279,17 @@ header {
 		height: 100vh;
 	}
 }
-
+@media only screen and (max-width: 769px) {
+	.about {
+		flex-direction: column;
+	}
+	.about__card {
+		width: 100%;
+	}
+	.quickone__card {
+		width: 100%;
+	}
+}
 /* Services Style */
 .services {
 	display: flex;
@@ -344,10 +354,11 @@ header {
 .card-header {
 	width: 25%;
 }
+/* video styles */
 
-/* Intro Styles */
-
-/* Quick One Styles */
+.cartoonofthemonth__video {
+	max-width: 300px;
+}
 
 /* Contact form styles */
 
