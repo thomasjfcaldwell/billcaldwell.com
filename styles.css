@@ -34,10 +34,28 @@ p {
 	padding: var(--size-2);
 }
 
-/* NAVBAR STYLES */
+/* HEADER STYLES */
 header {
 	border-bottom: 1px blue solid;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
+/* TITLE STYLES */
+.title {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.title-image {
+	width: 150px;
+}
+.title-header {
+	width: 500px;
+}
+/* NAVBAR STYLES */
 
 .navbar {
 	display: flex;
@@ -59,7 +77,7 @@ header {
 	margin-left: 2rem;
 }
 .navbar__list-item-image {
-	height: 2rem;
+	height: 1rem;
 }
 .navbar__list-item-link {
 	font-size: 1.2rem;
@@ -122,10 +140,66 @@ header {
 
 /* Main Styles */
 .main {
+	max-width: 1440px;
 	padding: 2rem 0.5rem;
+	margin: 0 auto;
 	@media (min-width: 40rem) {
 		padding: 2rem;
 	}
+}
+
+.hero {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	/* background-color: #0b1c4c; */
+	align-items: center;
+}
+
+/* Quick one style */
+
+.quickone__card {
+	display: flex;
+}
+.quickone__card-content {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(231, 245, 255);
+	border-radius: 6px;
+	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+	overflow: hidden;
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
+}
+.quickone__card-video {
+	height: 300px;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.quickone__card-header {
+	width: 50%;
+	margin: var(--size-4) auto;
+}
+
+/* IMAGE SECTION STYLE */
+.image__gallery {
+	display: flex;
+	flex-direction: column;
+	padding: var(--size-9);
+}
+.image__gallery-top {
+	width: 501px;
+}
+.image__gallery-container {
+	padding-block: var(--size-2);
+}
+.image__gallery-left {
+	width: 249px;
+}
+.image__gallery-right {
+	width: 249px;
 }
 
 /* Header section styles */
@@ -183,9 +257,6 @@ header {
 	}
 }
 @media only screen and (min-width: 1440px) {
-	.headersection {
-		height: 100vh;
-	}
 }
 
 /* About Section style */
@@ -237,43 +308,7 @@ header {
 	width: 50%;
 	margin: 2rem 0;
 }
-/* Quick one style */
 
-.quickone__card {
-	display: flex;
-	padding: 1rem;
-	margin-bottom: 2rem;
-	width: 60%;
-}
-.quickone__card-content {
-	display: flex;
-	flex-direction: column;
-	background-color: rgb(231, 245, 255);
-	width: 100%;
-	border-radius: 6px;
-	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-	overflow: hidden;
-	transition: transform 0.5s;
-	-webkit-transition: transform 0.5s;
-}
-.quickone__card-video {
-	height: 600px;
-	overflow: hidden;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-.quickone__card-info {
-	display: flex;
-	flex: 1 1 auto;
-	flex-direction: column;
-	padding: 1rem;
-	line-height: 1.5em;
-}
-.quickone__card-header {
-	width: 25%;
-	margin: 2rem 0;
-}
 @media only screen and (min-width: 1440px) {
 	.about {
 		height: 100vh;
