@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
 *,
 *::before,
 *::after {
@@ -5,14 +7,15 @@
 }
 html {
 	--color-primary: #0b1c4c;
-	--color-secondly: #f0f3ff;
+	--color-secondly: #f9faff;
 	--color-highlight: #ff7866;
 	--color-text: #727272;
 	--text-size: 0.8rem;
+	--font-family: 'Raleway', sans-serif;
 }
 
 body {
-	font-family: var(--font-sans);
+	font-family: var(--font-family);
 	font-size: var(--font-size-1);
 	padding: 0;
 	-webkit-font-smoothing: antialiased;
@@ -153,17 +156,19 @@ header {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
+	height: 100vh;
 }
 
 /* Quick one style */
 
 .quickone__card {
 	display: flex;
+	height: min-content;
 }
 .quickone__card-content {
 	display: flex;
 	flex-direction: column;
-	background-color: rgb(231, 245, 255);
+	background-color: #f9faff;
 	border-radius: 6px;
 	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
 	overflow: hidden;
@@ -205,6 +210,7 @@ header {
 .about {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	height: 100vh;
 }
 .about__header-container {
 	display: flex;
@@ -224,6 +230,8 @@ header {
 }
 .about__card-text {
 	grid-column-start: span 2;
+	padding-inline: var(--size-9);
+	margin-block: -10rem;
 }
 
 .about__card-content {
@@ -268,7 +276,7 @@ header {
 .card-content {
 	display: flex;
 	flex-direction: column;
-	background-color: rgb(231, 245, 255);
+	background-color: rgb(244, 250, 254);
 	width: 100%;
 	border-radius: 6px;
 	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
@@ -300,7 +308,7 @@ header {
 .card-header {
 	width: 25%;
 }
-*/
+
 /* video styles */
 
 .cartoonofthemonth__video {
