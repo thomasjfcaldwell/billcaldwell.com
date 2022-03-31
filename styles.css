@@ -305,14 +305,32 @@ header {
 	border-radius: 6px 6px 0px 0px;
 	opacity: 0.91;
 }
+.card-text {
+	height: min-content;
+}
 .card-header {
 	width: 25%;
+	margin-inline: auto;
+	margin-block: var(--size-5);
+}
+.card-link {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: var(--size-2);
+	color: var(--color-primary);
+}
+
+/* Video and Conform container */
+
+.monthlycartoon__contactform-container {
+	display: flex;
+	justify-content: space-around;
 }
 
 /* video styles */
 
 .cartoonofthemonth__video {
-	max-width: 300px;
+	max-width: 500px;
 }
 
 /* Contact form styles */
@@ -320,10 +338,11 @@ header {
 .contactform__form {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	flex-basis: 100%;
+	background-color: aquamarine;
 }
 .contactform__form-name-label {
-	font-size: var(--size-2);
+	font-size: var(--size-9);
 }
 
 /* footer section styles */
