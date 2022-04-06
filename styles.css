@@ -219,23 +219,28 @@ header {
 	.hero{
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: repeat(6, 1fr);
+		grid-template-rows: max-content, auto;
 		margin-block: var(--size-2);
 	}
 	.hero__content-container{
 		grid-column-start: span 4;
 		grid-row-start: 1;
-		grid-row-end: 3;
+		grid-row-end: 2;
+		align-items:center;
 		
 	}
 	.hero__content-image{
 		padding:var(--size-1);
-		/* background-image: url(images/Billportrait.png); */
-		width: 50%;
+		grid-column-start: span 2;
 	}
 	.hero_content-text p{
-		font-size: var(--size-2);
+		font-size: 0.7rem;
 
+	}
+	hero__content-gallery{
+		grid-column-start: 1;
+		grid-row-start: 2;
+		grid-row-end: 3;
 	}
 	.gallery__image-1{
 		width:80px;
