@@ -10,14 +10,12 @@ html {
 	--color-secondly: #f9faff;
 	--color-highlight: #ff7866;
 	--color-text: #475569;
-	--text-size: 0.6rem;
 	--font-family: 'Raleway', sans-serif;
 }
 
 body {
 	background-color: var(--color-primary);
 	font-family: var(--font-family);
-	font-size: var(--font-size-1);
 	padding: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -33,7 +31,6 @@ a {
 
 p {
 	color: var(--color-text);
-	font-size: var(--text-size);
 	line-height: 1.7;
 	padding: var(--size-1);
 }
@@ -220,15 +217,28 @@ header {
 
 @media only screen and (max-width: 40rem) {
 	.hero{
-		display:flex;
-		flex-direction: column-reverse;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+		margin-block: var(--size-2);
 	}
 	.hero__content-container{
-		display:flex;
-		flex-direction: column;
+		grid-column-start: span 4;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		
 	}
-	.hero__content-gallery{
-		display:none;
+	.hero__content-image{
+		padding:var(--size-1);
+		/* background-image: url(images/Billportrait.png); */
+		width: 50%;
+	}
+	.hero_content-text p{
+		font-size: var(--size-2);
+
+	}
+	.gallery__image-1{
+		width:80px;
 	}
 }
 
