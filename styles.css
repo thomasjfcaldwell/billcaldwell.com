@@ -241,7 +241,7 @@ header {
 		font-size: 0.7rem;
 
 	}
-	hero__content-gallery{
+	.hero__content-gallery{
 		grid-column-start: 1;
 		grid-row-start: 2;
 	}
@@ -253,6 +253,42 @@ header {
 	}
 	.hero__video{
 		
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.hero{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows:300px 400px ;
+	}
+	.hero__content-container {
+		grid-column-start: span 4;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		align-items: center;
+	
+	}
+	.hero__content-gallery {
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 2;
+		grid-row-end: 3;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		padding: var(--size-2);
+		margin-inline: auto;
+		align-items: center;
+		margin-top: 4rem;
+	}
+	.gallery__image-1 {
+		width: 150px;
+	}
+	.hero__video-container {
+		grid-column-start: span 2;
+	}
+	.hero__video{
+		
+		width:70%;
 	}
 }
 
@@ -330,6 +366,30 @@ header {
 		width:100%;
 	}
 }
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.about {
+		display: flex;
+		flex-direction: column;
+	}
+	.about__content-container{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr auto ;
+	}
+	.about__content-image{
+		width: 90%;
+		margin-inline:auto;
+	}
+	.about__content-header{
+		width: 100%;
+		font-size: var(--size-3);
+	}
+	.about__content-text{
+		grid-column-start: span 2;
+		width: 100%;
+		font-size:0.9rem; 
+	}
+}
 
 /* Services Style */
 .services {
@@ -390,6 +450,16 @@ margin-block: var(--size-9);
 		line-height: 1.5;
 	}
 }
+@media only screen and (min-width: 768px) and (max-width: 959px){
+	.services-container {
+		grid-template-columns: 1fr 1fr;
+	}
+	.card {
+		width: 100%;
+	}
+}
+
+
 /* NEWSPAPERS STYLES */
 
 .newspapers__image-container{
@@ -426,6 +496,11 @@ margin-block: var(--size-9);
 		display:none;
 	}
 }
+@media only screen and (min-width: 768px) and (max-width: 959px){
+	.newspapers__image {
+		width:90%;
+	}
+}
 
 
 /* MAGAZINE STYLES */
@@ -456,6 +531,18 @@ margin-block: var(--size-9);
 	}
 	.magazines__image {
 		width:80%;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.magazine__container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.magazine-card{
+		width:90%;
+	}
+	.magazines__image {
+		width: 100%;
 	}
 }
 
@@ -523,6 +610,18 @@ margin-block: var(--size-9);
 		width: 80%;
 	}
 }
+@media only screen and (min-width: 768px) and (max-width: 959px){
+	.sketch-illustrations-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.sketch-card{
+		width:50%;
+	}
+	.illustrations-card{
+		width:50%;
+	}
+}
 
 /* STRIPS STYLES */
 
@@ -549,6 +648,20 @@ margin-block: var(--size-9);
 	}
 	.strips-image {
 		width: 300px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.strips__container {
+		display: flex;
+		align-items: center;
+		padding:var(--size-2)
+	}
+	
+	.strips__image-container {
+		width: 100%;
+	}
+	.strips-card{
+		width:100%
 	}
 }
 
