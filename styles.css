@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
-
 *,
 *::before,
 *::after {
@@ -7,20 +5,26 @@
 }
 html {
 	--color-primary: #b2bbd9;
-	--color-secondly: #f9faff;
+	--color-background:#fcfae52e;
 	--color-highlight: #ff7866;
-	--color-text: #475569;
-	--font-family: 'Raleway', sans-serif;
+	--color-text: #9A9A9A;
+	--font-primary:'frank-new',sans-serif;
+	--font-secondly:'itc-american-typewriter',serif;
+	--text-subheader:2rem;
+	--text-paragraph:1.2rem;
+	--text-header:2.5rem;
+	--text-title:3rem;
 }
 
 body {
-	background-color: var(--color-primary);
-	font-family: var(--font-family);
+	background-color: var(--color-background);
+	font-family: var(--font-primary);
 	padding: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 	margin: 0;
+	font-size:15px;
 }
 li {
 	list-style: none;
@@ -33,7 +37,7 @@ p {
 	color: var(--color-text);
 	line-height: 1.7;
 	padding: var(--size-1);
-	font-size: var(--size-fluid-2);
+	font-size: var(--text-paragraph);
 }
 
 /* HEADER STYLES */
