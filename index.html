@@ -7,85 +7,144 @@
 		<link rel="stylesheet" href="styles.css" />
 		<link rel="stylesheet" href="https://unpkg.com/open-props" />
 		<link rel="stylesheet" href="https://use.typekit.net/imo8nta.css" />
-		<title>Document</title>
+		<script
+			src="https://kit.fontawesome.com/01ec3d5c95.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Bill Caldwell</title>
 	</head>
 	<body>
 		<nav class="nav">
 			<div class="nav__container">
-				<div class="nav__col">
-					<a href="#contact">Contact</a>
+				<div class="nav__logo-container">
+					<img
+						src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653673033/billcaldwellsignature_oayjer.png"
+						alt=""
+						class="nav__logo"
+					/>
 				</div>
-				<div class="nav__col">
-					<a href="#about">More About Bill</a>
+				<div class="nav__image-container">
+					<img
+						src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653009839/billself.5.18.sm_yx7w0p.png"
+						alt="Cartoon Of Bill"
+						class="bill__cartoon"
+					/>
 				</div>
-				<div class="nav__col">
-					<a href="#work">Work</a>
+				<ul class="nav__list">
+					<li class="nav__list-item"><a href="#contact">Contact</a></li>
+
+					<li class="nav__list-item"><a href="#about">More About Bill</a></li>
+
+					<li class="nav__list-item"><a href="#work">Work</a></li>
+				</ul>
+				<div class="nav__image-container">
+					<img
+						src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653009839/dogSelf5.18.sm_p7msym.png"
+						alt="Cartoon Of Day"
+						class="dog__cartoon"
+					/>
 				</div>
 			</div>
-			<!-- container, contact-link more about bill link work link arrow  -->
 		</nav>
 		<main class="main">
+			<!-- Hero section -->
 			<section class="hero">
 				<div class="hero__container">
-					<div class="header__container">
-						<img
-							src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653009839/billself.5.18.sm_yx7w0p.png"
-							alt="Cartoon Of Bill"
-							class="bill__cartoon"
-						/>
-						<div class="title__container">
-							<img
-								src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653010662/signature1.transbackground_mldwbo.png"
-								alt="bill signature"
-								class="title__img"
-							/>
-							<h1 class="title">CARTOONIST - ILLUSTRATOR - DOG OWNER</h1>
+					<div class="latest-work__container">
+						<h2 class="latest-work__title">Latest Work</h2>
+						<div class="carousel__container">
+							<div class="carousel">
+								<div class="carousel__slides">
+									<div class="carousel__slide active">
+										<img
+											src="https://res.cloudinary.com/djjqsmlei/image/upload/v1652998027/petrolPrices.5.19_hjfljy.png"
+											alt=""
+										/>
+										<p>Cartoon Petrol Prices in the UK</p>
+										<a href="">Link to News Story</a>
+									</div>
+									<div class="carousel__slide">
+										<img
+											src="https://res.cloudinary.com/djjqsmlei/image/upload/v1652998029/tesla.5.19_x36foj.png"
+											alt=""
+										/>
+										<p>Cartoon Tesla</p>
+										<a href="">Link to News Story</a>
+									</div>
+									<div class="carousel__slide">
+										<img
+											src="https://res.cloudinary.com/djjqsmlei/image/upload/v1652998027/boris.5.19_z70fjv.png"
+											alt=""
+										/>
+										<p>Cartoon Boris Johnson</p>
+										<a href="">Link to News Story</a>
+									</div>
+									<div class="carousel__slide">
+										<img
+											src="https://res.cloudinary.com/djjqsmlei/image/upload/v1652998027/princeHarry.5.19_b42gs7.png"
+											alt=""
+										/>
+										<p>Cartoon Prince Harry</p>
+										<a href="">Link to News Story</a>
+									</div>
+									<div class="carousel__slide">
+										<img
+											src="https://res.cloudinary.com/djjqsmlei/image/upload/v1652998027/toweroflondon.5.19_jafpvj.png"
+											alt=""
+										/>
+										<p>Cartoon Tower Of London</p>
+										<a href="">Link to News Story</a>
+									</div>
+									<div class="carousel__slide">
+										<img
+											src="https://res.cloudinary.com/djjqsmlei/image/upload/v1652998027/ev.5.19_p2hib9.png"
+											alt=""
+										/>
+										<p>Cartoon EV Cars</p>
+										<a href="">Link to News Story</a>
+									</div>
+									<div class="carousel__slide">
+										<img
+											src="https://res.cloudinary.com/djjqsmlei/image/upload/v1652998026/supermarketPrices.5.19_hpo1ds.png"
+											alt=""
+										/>
+										<p>Cartoon Supermarket Prices</p>
+										<a href="">Link to News Story</a>
+									</div>
+								</div>
+								<div id="nav-button--prev" class="carousel__nav-button"></div>
+								<div id="nav-button--next" class="carousel__nav-button"></div>
+							</div>
 						</div>
-						<img
-							src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653009839/dogSelf5.18.sm_p7msym.png"
-							alt="Cartoon Of Day"
-							class="dog__cartoon"
-						/>
 					</div>
-					<div class="carousel__container">
-						<h2 class="carousal-title">Latest Work</h2>
-						<div class="carousel">
-							<img
-								src="https://res.cloudinary.com/djjqsmlei/image/upload/v1652998029/tesla.5.19_x36foj.png"
-								alt="tesla cartoon"
-								class="carousel__image-1 carousel__image"
-							/>
-							<img
-								src="https://res.cloudinary.com/djjqsmlei/image/upload/v1652998027/boris.5.19_z70fjv.png"
-								alt="Boris Johnson Cartoon"
-								class="carousel__image-2 carousel__image"
-							/>
-							<img
-								src="https://res.cloudinary.com/djjqsmlei/image/upload/v1652998027/petrolPrices.5.19_hjfljy.png"
-								alt="Boris Johnson Cartoon"
-								class="carousel__image-3 carousel__image"
-							/>
-							<img
-								src="https://res.cloudinary.com/djjqsmlei/image/upload/v1652998027/toweroflondon.5.19_jafpvj.png"
-								alt="Petrol Prices Cartoon"
-								class="carousel__image-3 carousel__image"
-							/>
+					<div class="title-container">
+						<h2 class="title">Cartoonist</h2>
+						<h2 class="title">Illustrator</h2>
+						<h2 class="title">Dog Owner</h2>
+						<div class="title__link-container">
+							<a href="" class="title__link">Hear Bills Story</a>
+							<i class="fas fa-angle-down"></i>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="about">
+			<!-- Hero Section Ends  -->
+
+			<!-- About Section with slider  -->
+
+			<section class="about" id="about">
 				<div class="about__content-container">
-					<img
-						class="about__content-image"
-						src="images/Billportrait.png"
-						alt=""
-					/>
+					<h2 class="about__content-title">Bills Story</h2>
 					<h5 class="about__content-header">
 						It all started with the atom bomb..my first drawing. I must have
 						heard a discussion on the radio and my young ears picked up on the
 						serious chat about the imminent destruction of the world.
 					</h5>
+					<img
+						class="about__content-image"
+						src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653676233/Billlandscape_ltr1ux.png"
+						alt=" Photo of Bill on his bike"
+					/>
 					<p class="about__content-text">
 						It was an easy image.. I remember it clearly.Just a black filled- in
 						pointy thing.No frills. My material got lighter with time - thank
@@ -103,85 +162,91 @@
 						of balance
 					</p>
 				</div>
+				<!-- Gallery Section -->
+				<section class="gallery">
+					<div class="gallery-container">
+						<div class="gallery-row-1 gallery-row">
+							<div class="col">
+								<img
+									src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653076120/yatchingMonthlyForGallery_iasbuo.png"
+									alt=""
+								/>
+							</div>
+							<div class="col">
+								<img
+									src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653076267/wedding2CartoonForGallery_ulojam.png"
+									alt=""
+								/>
+							</div>
+							<!-- <div class="col">
+								<img
+									src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653076334/bumRapForGallery_r1wjef.png"
+									alt=""
+								/>
+							</div>
+						-->
+						</div>
+						<div class="gallery-row-2 gallery-row">
+							<div class="col">
+								<img
+									src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653076499/weddingCartoonForGallery_yfksgs.png"
+									alt=""
+								/>
+							</div>
+							<div class="col">
+								<img
+									src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653076573/botoxForGallery_jiahe4.png"
+									alt=""
+								/>
+							</div>
+							<!-- <div class="col">
+								<img
+									src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653076638/churchStreamingForGallery_gw8lhj.png"
+									alt=""
+								/>
+							</div> -->
+						</div>
+						<div class="gallery-row-3 gallery-row">
+							<div class="col">
+								<img
+									src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653076739/usNavyForGallery_wrioth.png"
+									alt=""
+								/>
+							</div>
+							<div class="col">
+								<img
+									src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653076771/universialIncomeForGallery_we602k.png"
+									alt=""
+								/>
+							</div>
+							<!-- <div class="col">
+								<img
+									src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653076834/2lowForGallery_iddui5.png"
+									alt=""
+								/>
+							</div> -->
+						</div>
+						<!-- <div class="gallery-row-4 gallery-row">
+							<div class="col">
+								<img
+									src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653077019/puppetCartoonForGallery_xeneor.png"
+									alt=""
+								/>
+							</div>
+							<div class="col">
+								<img
+									src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653077063/cloggerForGallery_ggdzun.png"
+									alt=""
+								/>
+							</div>
+						</div> -->
+					</div>
+				</section>
+				<!-- Gallery  ends -->
 			</section>
-			<section class="gallery">
-				<div class="gallery-container">
-					<div class="gallery-row-1 gallery-row">
-						<div class="col">
-							<img
-								src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653076120/yatchingMonthlyForGallery_iasbuo.png"
-								alt=""
-							/>
-						</div>
-						<div class="col">
-							<img
-								src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653076267/wedding2CartoonForGallery_ulojam.png"
-								alt=""
-							/>
-						</div>
-						<div class="col">
-							<img
-								src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653076334/bumRapForGallery_r1wjef.png"
-								alt=""
-							/>
-						</div>
-					</div>
-					<div class="gallery-row-2 gallery-row">
-						<div class="col">
-							<img
-								src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653076499/weddingCartoonForGallery_yfksgs.png"
-								alt=""
-							/>
-						</div>
-						<div class="col">
-							<img
-								src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653076573/botoxForGallery_jiahe4.png"
-								alt=""
-							/>
-						</div>
-						<div class="col">
-							<img
-								src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653076638/churchStreamingForGallery_gw8lhj.png"
-								alt=""
-							/>
-						</div>
-					</div>
-					<div class="gallery-row-3 gallery-row">
-						<div class="col">
-							<img
-								src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653076739/usNavyForGallery_wrioth.png"
-								alt=""
-							/>
-						</div>
-						<div class="col">
-							<img
-								src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653076771/universialIncomeForGallery_we602k.png"
-								alt=""
-							/>
-						</div>
-						<div class="col">
-							<img
-								src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653076834/2lowForGallery_iddui5.png"
-								alt=""
-							/>
-						</div>
-					</div>
-					<div class="gallery-row-4 gallery-row">
-						<div class="col">
-							<img
-								src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653077019/puppetCartoonForGallery_xeneor.png"
-								alt=""
-							/>
-						</div>
-						<div class="col">
-							<img
-								src="https://res.cloudinary.com/djjqsmlei/image/upload/v1653077063/cloggerForGallery_ggdzun.png"
-								alt=""
-							/>
-						</div>
-					</div>
-				</div>
-			</section>
+			<!-- About Section with gallery  ends -->
+
+			<!-- Work Sections -->
 			<section id="work" class="work">
 				<div class="work-container">
 					<article class="newspapers">
@@ -259,7 +324,10 @@
 					</article>
 				</div>
 			</section>
-			<!-- <section id="contact" class="contact">
+			<!-- Work Sections end -->
+
+			<!-- Contact Sections -->
+			<section id="contact" class="contact">
 				<div class="contact-container work-article-container">
 					<article class="email">
 						<img
@@ -284,7 +352,8 @@
 						>
 					</article>
 				</div>
-			</section> -->
+			</section>
+			<!-- Contact Sections End -->
 		</main>
 		<script src="app.js"></script>
 	</body>

@@ -1,20 +1,22 @@
-// Nav Bar Hamburger toggle classes for menu
+let slides = document.getElementsByClassName('carousel__slide');
 
-const hamburger = document.querySelector('.hamburger');
-const navbarList = document.querySelector('.navbar__list');
+let currentSlide = 0;
 
-hamburger.addEventListener('click', mobileMenu);
+document.getElementById('nav-button--next').addEventListener('click', () => {
+	changeSlide(currentSlide + 1);
+});
+document.getElementById('nav-button--prev').addEventListener('click', () => {
+	changeSlide(currentSlide - 1);
+});
 
-function mobileMenu() {
-	hamburger.classList.toggle('active');
-	navbarList.classList.toggle('active');
-} /// function to turn active class on the elements
-
-const navLink = document.querySelectorAll('.navbar__list-item-link');
-
-navLink.forEach((n) => n.addEventListener('click', closeMenu));
-
-function closeMenu() {
-	hamburger.classList.remove('active');
-	navbarList.classList.remove('active');
-} // function to remove classes to remove menu from screen
+function changeSlide(moveTo) {
+	if (moveTo >= slides.length) {
+		moveTo = 0;
+	}
+	if (moveTo < 0) {
+		moveTo = slides.length - 1;
+	}
+	slides[currentSlide].classList.toggle('active');
+	slides[moveTo].classList.toggle('active');
+	currentSlide = moveTo;
+}
