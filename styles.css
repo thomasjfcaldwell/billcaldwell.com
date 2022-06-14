@@ -19,7 +19,7 @@ html {
 /* GLOBE STYLES */
 
 body {
-	background:#adffc825;
+	background:#deffe925;
 	background-repeat: no-repeat;
 	font-family: var(--font-text);
 	padding: 0;
@@ -117,13 +117,15 @@ p {
 	grid-row-start: 3;
 	grid-column-start: 3;
 	grid-column-end: 4;
+	margin:0 1rem;
 	}
 	.nav__image-container:nth-of-type(2) {
 	grid-column-start: 2;
 	grid-column-end: 3;
+	margin: 0 1rem;
 	}
 	.nav__image-container > img {
-	width:8rem;
+	width:10rem;
 	margin-top:1rem;
 	}
 	.nav__list {
@@ -135,7 +137,7 @@ p {
 	}
 	.nav__list>li {
 	padding: 0;
-	margin:0 10px;
+	margin:3rem 1rem;
 	}
 	.nav__list-item	>a {
 	font-size: 0.7rem;
@@ -737,15 +739,15 @@ p {
 		margin:0 auto;
 	}
 	.work-article-container	> img {
-		height: 11rem;
+		height: 9rem;
 		padding: 0;
 	}
 	.magazines-image-col > img {
-		height: 11rem;
+		height: 10rem;
 		padding: 0.7rem;
 	}
 	.strips-container > img {
-		height:9rem;
+		height:8rem;
 	}
 }
 
@@ -888,17 +890,28 @@ p {
 		display: flex;
 		flex-direction: column;
 	}
+	.email > img {
+		width:40%;
+		margin-left:1rem;
+	}
 	.email	>	h5 {
 		left:55%;
 	}
 	.email > a {
 		left: 50%;
+		top:25%;
 	}
+	.linkdin>img {
+		width: 40%;
+		margin-left: 1rem;
+	}
+
 	.linkdin	>	h5 {
 		right: 55%;
 	}
 
 	.linkdin	>	a  {
 		left: 18%;
+		top: 25%;
 	}
 }
